@@ -1,20 +1,50 @@
 header{
     text-align: center;
-    background-color: lightblue;
+    background-color: #A1907C;
     height:12vh;
     width:100%;
+}
+
+h1{
+    color:#212526;
 }
 
 main{
     display:flex;
     height:80vh;
-    background-color: lightgray;
+    background-color: #E6EAEC;
 }
 
 #search{
-    background-color: aqua;
-    flex-grow: 1.25;
+    background-color: #EDEAE6;
+    flex-grow: .5;
+    height:100%
+}
 
+#cityF{
+    margin-left:5%;
+    color:#212526;
+}
+
+#searchArea{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    height:4vh;
+    font-size:20px
+}
+
+#searchBtn{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    height:3.5vh;
+}
+
+#oldSearch{
+    width:100%;
+    height:50vh;
+    background-color: grey;
 }
 
 #display{
