@@ -14,9 +14,11 @@ main{
 #search{
     background-color: aqua;
     flex-grow: 1.25;
+
 }
 
 #display{
     background-color: ghostwhite;
     flex-grow: 4;
+
 }
