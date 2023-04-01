@@ -1,8 +1,14 @@
 header{
     text-align: center;
     background-color: #A1907C;
-    height:12vh;
+    height:100%;
     width:100%;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
@@ -12,13 +18,12 @@ h1{
 main{
     display:flex;
     height:80vh;
-    background-color: #E6EAEC;
 }
 
 #search{
     background-color: #EDEAE6;
     flex-grow: .5;
-    height:100%
+    height:100%;
 }
 
 #cityF{
@@ -43,12 +48,23 @@ main{
 
 #oldSearch{
     width:100%;
-    height:50vh;
     background-color: grey;
 }
 
 #display{
-    background-color: ghostwhite;
+    background-color: #EDEAE6;
     flex-grow: 4;
+    display:flex;
+    flex-wrap:wrap;
+}
 
+#curSearch{
+    padding-left: 5%;
+    width:100%;
+    height:40%;
+}
+
+#fiveDay{
+    width:100%;
+    height:60%;
 }
