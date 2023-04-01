@@ -1,0 +1,22 @@
+header{
+    text-align: center;
+    background-color: lightblue;
+    height:12vh;
+    width:100%;
+}
+
+main{
+    display:flex;
+    height:80vh;
+    background-color: lightgray;
+}
+
+#search{
+    background-color: aqua;
+    flex-grow: 1.25;
+}
+
+#display{
+    background-color: ghostwhite;
+    flex-grow: 4;
+}
