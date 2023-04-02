@@ -25,7 +25,6 @@ main{
 }
 
 #search{
-    margin-top:20px;
     background-color: #EDEAE6;
     flex-grow: .5;
     height:100%;
@@ -64,7 +63,6 @@ main{
 }
 
 #curSearch{
-    margin-top:20px;
     padding-left: 5%;
     width:100%;
     height:40%;
@@ -73,8 +71,17 @@ main{
 }
 
 #fiveDay{
-    margin-top:20px;
     padding-left: 5%;
     width:100%;
     height:60%;
+}
+
+#cardSpace{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: #A1907C;
 }
