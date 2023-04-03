@@ -18,7 +18,8 @@
     </header>
 
     <main class="row">
-
+        <!-- want to use bootstrap to split my page into two columns, instead of using flexbox -->
+        <!-- the search column is only going to take up 25% of the size -->
         <div class="col-12 col-xl-3 m-3 citySearch">
             <h2 id="find">Search Your City:</h2>
             <div class="d-grid gap-2">
@@ -31,28 +32,25 @@
                 <button id="clearSearch">Clear Search</button>
             </div>
         </div>
+        <!-- while the weather column will be the other 75% -->
+        <div class="col-12 col-xl-9 weatherF">
+            <div class="align-items-center m-3" id="mainFore">
+                <!-- contents here will be added through JS! -->
+            </div>
 
-        <div class="col-12 col-xl-9 fiveDay">
-            <div class="align-items-center m-3" id="weather-container"></div>
-
-                <div class="row align-items-center m-3" id="forecast-container"></div>
+                <div class="row align-items-center m-3" id="fiveDayFore">
+                    <!-- contents here will be added through JS! -->
+                </div>
         </div>
-
-
         <!-- <div id="search">
             <h2 id="cityF" >Find Your City Here:</h2>
                 <input type="text" id="searchArea">
             <br><br>
             <button id="searchBtn">Search</button>
-
             <div id="oldSearch">
-
             </div>
-
         </div>
-
         <div id="display">
-
             <div id="curSearch">
                 <h2>Your Current City:</h2>
                 <br>
@@ -60,19 +58,15 @@
                 <p class="curP">Current Temperature:</p>
                 <p class="curP">Current Humidity:</p>
             </div>
-
             <div id="fiveDay">
                 <h2 id="fiveTitle">5 Day Forecast:</h2>
-
             </div>
-
         </div> -->
-
     </main>
 
-    <footer>
-    </footer>
-
+    
+    <!-- adding in scripts here, jquery and personal script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script href="/assets/script.js"></script>
     
 </body>
