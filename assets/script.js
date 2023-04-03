@@ -1,12 +1,15 @@
-var search = document.querySelector('#searchBtn');
+var searchBtn = document.querySelector('#searchBtn');
 
-search.addEventListener("click", function(){
-    console.log("works!");
+var city = document.querySelector('#searchArea').textContent;
 
-    document.form1.submit();
+console.log(city);
 
+
+$("#searchBtn").on("click", function(event){
+    event.preventDefault();
+    console.log("hello");
 });
 
-
-
-
+searchBtn.addEventListener("click", function(){
+    console.log("hello");
+});

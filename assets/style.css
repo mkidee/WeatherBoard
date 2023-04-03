@@ -74,13 +74,14 @@ main{
     color:black;
 }
 
-#fiveDay{
+/* #fiveDay{
+    display:none;
     padding-left: 3%;
     width:100%;
     height:60%;
     padding-right:3%;
     flex-wrap: wrap;
-}
+} */
 
 #cardSpace{
     display:flex;
