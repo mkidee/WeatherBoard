@@ -19,57 +19,9 @@ body{
     background-color: #EDEAE6;
 }
 
-main{
-    display:flex;
-    height:80vh;
-}
-
-#search{
-    background-color: #EDEAE6;
-    flex-grow: .5;
-    height:100%;
-}
-
-#cityF{
-    margin-left:5%;
-    color:#212526;
-}
-
-#searchArea{
-    width:90%;
-    margin-left:5%;
-    margin-right:5%;
-    height:4vh;
-    font-size:20px
-}
-
 #searchBtn{
     width:90%;
     margin-left:5%;
     margin-right:5%;
     height:3.5vh;
-}
-
-#oldSearch{
-    width:100%;
-    background-color: grey;
-}
-
-#display{
-    background-color: #EDEAE6;
-    flex-grow: 4;
-    display:flex;
-    flex-wrap:wrap;
-}
-
-#curSearch{
-    padding-left: 3%;
-    width:100%;
-    height:40%;
-    /* border: 2px black;
-    border-style:solid; */
-}
-
-.curP{
-    color:black;
 }
