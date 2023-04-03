@@ -1,6 +1,8 @@
+
 header{
     text-align: center;
-    background-color: #A1907C;
+    background-color: #1D2426;
+    color:#E4E8EB;
     height:100%;
     width:100%;
 }
@@ -11,17 +13,18 @@ nav{
     justify-content: center;
 }
 
-h1{
-    color:#212526;
+
+main{
+    background-color: #CFE4ED;
 }
 
-body{
-    background-color: #EDEAE6;
+.btnS{
+    margin-bottom: 8px;
+    border:1px black;
+    border-style:solid;
+    box-shadow: 0 4px 8px 0 #8C9AA1, 0 6px 20px 0 #8C9AA1;
+    background-color:black ;
+    color:#E4E8EB;
+    opacity:.75;
 }
 
-#searchBtn{
-    width:90%;
-    margin-left:5%;
-    margin-right:5%;
-    height:3.5vh;
-}
