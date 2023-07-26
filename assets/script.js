@@ -32,3 +32,49 @@ $("#save-button").on("click", function (event) {
     // save the city to local storage
     saveCity();
 })
+
+// getWeather does two things when fed a city: it gets the weather, and stores the latitude and longitude in variables
+function getWeather(city) {
+    // create request URL with city and APIKey 
+    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=imperial";
+    
+    // fetch weather data
+    fetch(weatherURL)
+        .then(function (response) {
+        // get JSON format response
+        return response.json();
+        })
+        // get weather data
+        .then(function (weatherData) {
+        console.log('Current Weather in ' + city);
+        console.log(weatherData);
+
+        // store latitude and longitude values for getForecast
+        let lat = weatherData.coord.lat;
+        let lon = weatherData.coord.lon;
+        
+        getForecast(lat, lon, city);
+
+        displayWeather(weatherData);
+        });
+}
+
+// getForecast takes in latitude and longitude (and city simply for console log) to return 5-day forecast data
+function getForecast(lat, lon, city) {
+    // create request URL with lat, lon, and APIKey 
+    let forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=" + APIKey + "&units=imperial";
+
+    // fetch forecast data
+    fetch(forecastURL)
+        .then(function (response) {
+        return response.json();
+        })
+        .then(function (forecastData) {
+        console.log('Five Day Forecast in ' + city);
+        console.log(forecastData);
+
+        // pass returned forecastData into displayForecast
+        displayForecast(forecastData);
+        });
+}
+
