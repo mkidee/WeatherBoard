@@ -10,64 +10,49 @@
 </head>
 <body>
 
+        <div class ="container-fluid">
 
     <header>
-        <nav>
             <h1>Weather Board</h1>
-        </nav>
     </header>
 
     <main class="row">
-        <!-- want to use bootstrap to split my page into two columns, instead of using flexbox -->
-        <!-- the search column is only going to take up 25% of the size -->
-        <div class="col-12 col-xl-3 m-3 citySearch">
-            <h2 id="find">Search Your City:</h2>
+        <!-- this column will hold the search area (both button and feed), and search history -->
+        <div class="col-12 col-xxl-3 city-column">
+            <h2>Find Your City</h2>
             <div class="d-grid gap-2">
-                <label for="citySearch"></label>
-                <input type="text" id="searchInput" placeholder="Bakersfield">
-                <button class="btnS" id="searchBtn">Search</button>
+                <label for="city-input"></label>
+                <input type="text" id="city-input" placeholder="Bakersfield">
+                <button class="btn" id="save-button">Check Weather</button>
             </div>
             <div class="d-grid"> 
-                <div id="searchList"></div>
-                <button class="btnS" id="clearSearch">Clear Search</button>
+                <div id="city-list"></div>
+                <button id="clear-cities">Clear Search History</button>
             </div>
         </div>
-        <!-- while the weather column will be the other 75% -->
-        <div class="col-12 col-xl-9 weatherF">
-            <div class="align-items-center m-3" id="mainFore">
-                <!-- contents here will be added through JS! -->
-            </div>
 
-                <div class="row align-items-center m-3" id="fiveDayFore">
-                    <!-- contents here will be added through JS! -->
-                </div>
+        <!-- this column will hold the weather -->
+        <div class="col-12 col-xxl-9 p-5">
+            <!-- container for current weather for JS template literal -->
+            <div class="align-items-center m-4" id="weather-container"></div>
+            <!-- container for current forecast for JS template literal -->
+            <div class="row align-items-center m-3" id="forecast-container"></div>
         </div>
-        <!-- <div id="search">
-            <h2 id="cityF" >Find Your City Here:</h2>
-                <input type="text" id="searchArea">
-            <br><br>
-            <button id="searchBtn">Search</button>
-            <div id="oldSearch">
-            </div>
-        </div>
-        <div id="display">
-            <div id="curSearch">
-                <h2>Your Current City:</h2>
-                <br>
-                <p class="curP">Current Wind:</p>
-                <p class="curP">Current Temperature:</p>
-                <p class="curP">Current Humidity:</p>
-            </div>
-            <div id="fiveDay">
-                <h2 id="fiveTitle">5 Day Forecast:</h2>
-            </div>
-        </div> -->
     </main>
 
+
+        
+
+
+        </div>
     
-    <!-- adding in scripts here, jquery and personal script -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script href="/assets/script.js"></script>
-    
-</body>
+        <!-- adding in scripts here, jquery and personal script -->
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+            integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+            crossorigin="anonymous"
+            ></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script href="/assets/script.js"></script>
+
+    </body>
 </html>
