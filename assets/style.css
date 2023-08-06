@@ -1,29 +1,120 @@
 
-header{
-    text-align: center;
-    background-color: #1D2426;
-    color:#E4E8EB;
-    height:100%;
-    width:100%;
+*{
+    box-sizing: border-box;
+    list-style-type: none;
 }
 
-nav{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+html{
+    height: 100%;
+}
+    
+body {
+background: #000000; 
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 100%;
 }
 
-main{
-    background-color: #CFE4ED;
+h1 {
+    font-size: 7rem;
+    color: rgb(146, 146, 146);
+    margin: 0;
 }
 
-.btnS{
-    margin-bottom: 8px;
-    border:1px black;
-    border-style:solid;
-    box-shadow: 0 4px 8px 0 #8C9AA1, 0 6px 20px 0 #8C9AA1;
-    background-color:black ;
-    color:#E4E8EB;
-    opacity:.75;
+h2 {
+    font-size: 5rem;
+    color: rgb(96, 96, 96);
 }
 
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+#city-input {
+    height: 3rem;
+    font-size: 50px;
+    background-color: rgba(48, 48, 48, 0.222);
+    color: white;
+}
+
+#city-input::placeholder {
+    color: rgba(255, 255, 255, 0.483);
+    font-size: 2.5rem;
+}
+
+#save-button {
+    font-size: 3rem;
+    margin-bottom: 5vh;
+    background-color: rgba(70, 70, 70, 0.475);
+    color: white;
+}
+
+#save-button:hover {
+    font-size: 3.5rem;
+    background-color: rgba(70, 70, 70, 0.754);
+}
+
+#city-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.city-button {
+    font-size: 3rem;
+    background-color: rgba(70, 70, 70, 0.475);
+    color: white;
+}
+
+.city-button:hover {
+    font-size: 3.5rem;
+    background-color: rgba(70, 70, 70, 0.754);
+    color: white;
+}
+
+#clear-cities {
+    font-size: 1.5rem;
+    background-color: rgba(70, 70, 70, 0.475);
+    color: white;
+    width: auto;
+}
+
+#weather-container {
+    max-width: 30%;
+    background-color: rgba(120, 120, 120, 0.6);
+    color: white;
+    min-width: 30em;
+
+}
+
+#forecast-container {    
+    color: white;
+}
+
+#weatherList {
+    font-size: 1.8rem;
+}
+
+.forecastList {
+    font-size: 1.8rem;
+}
+
+.forecastBlock {
+    width: 30em;
+    min-width: 30em;
+    background-color: rgba(60, 60, 60, 0.6);
+    margin: 0;
+    padding: 1em;
+}

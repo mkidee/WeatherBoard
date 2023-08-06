@@ -10,49 +10,45 @@
 </head>
 <body>
 
-        <div class ="container-fluid">
+    <div class ="container-fluid">
 
-    <header>
-            <h1>Weather Board</h1>
-    </header>
+        <header>
+                <h1>Weather Board</h1>
+        </header>
 
-    <main class="row">
-        <!-- this column will hold the search area (both button and feed), and search history -->
-        <div class="col-12 col-xxl-3 city-column">
-            <h2>Find Your City</h2>
-            <div class="d-grid gap-2">
-                <label for="city-input"></label>
-                <input type="text" id="city-input" placeholder="Bakersfield">
-                <button class="btn" id="save-button">Check Weather</button>
+        <main class="row">
+            <!-- this column will hold the search area (both button and feed), and search history -->
+            <div class="col-12 col-xxl-3 city-column">
+                <h2>Find Your City</h2>
+                <div class="d-grid gap-2">
+                    <label for="city-input"></label>
+                    <input type="text" id="city-input" placeholder="Bakersfield">
+                    <button class="btn" id="save-button">Check Weather</button>
+                </div>
+                <div class="d-grid"> 
+                    <div id="city-list"></div>
+                    <button id="clear-cities">Clear Search History</button>
+                </div>
             </div>
-            <div class="d-grid"> 
-                <div id="city-list"></div>
-                <button id="clear-cities">Clear Search History</button>
+
+            <!-- this column will hold the weather -->
+            <div class="col-12 col-xxl-9 p-5">
+                <!-- container for current weather for JS template literal -->
+                <div class="align-items-center m-4" id="weather-container"></div>
+                <!-- container for current forecast for JS template literal -->
+                <div class="row align-items-center m-3" id="forecast-container"></div>
             </div>
-        </div>
+        </main>
 
-        <!-- this column will hold the weather -->
-        <div class="col-12 col-xxl-9 p-5">
-            <!-- container for current weather for JS template literal -->
-            <div class="align-items-center m-4" id="weather-container"></div>
-            <!-- container for current forecast for JS template literal -->
-            <div class="row align-items-center m-3" id="forecast-container"></div>
-        </div>
-    </main>
-
-
-        
-
-
-        </div>
+    </div>
     
-        <!-- adding in scripts here, jquery and personal script -->
+        <!-- adding in scripts here, bootstrap, jquery and personal script -->
         <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
             integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
             crossorigin="anonymous"
             ></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script href="/assets/script.js"></script>
+        <script src="./assets/script.js"></script>
 
     </body>
 </html>
